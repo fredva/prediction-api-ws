@@ -62,3 +62,8 @@ Finn deg et datasett, eller lag ditt eget. Noen kilder:
 - [Kaggle](https://www.kaggle.com)
 - [mldata.org](http://mldata.org/repository/data/)
 - [deeplearning.net](http://deeplearning.net/datasets/)
+
+## Bonuslek
+
+ Ta en kikk på [Cloud Vision API](https://cloud.google.com/vision). Det finnes flere [tutorials](https://cloud.google.com/vision/docs/tutorials).
+
