@@ -16,7 +16,7 @@ Datasettet finner du på https://storage.googleapis.com/ml-intro.appspot.com/tem
 
 ### Format
 Datasettet er på følgende format:  
-`temperatur,breddegrad,datoordinal`.
+`temperatur,breddegrad,datoordinal`
 
 Utsnitt:
 
@@ -37,7 +37,7 @@ Kolonne 2 er nummeret på dagen i året. 15. april er 105, 2. juni er 153, etc. 
 - 68.9968: Kautokeino
 
 #### Kode
-Originalfila fra MET, og scriptet for å konvertere den til et format som er kompatibelt med Prediction API, ligger i `data/temperatures`.
+Originalfila fra MET, og scriptet for å konvertere den til et format som er kompatibelt med Prediction API, ligger i [`data/temperatures`](https://github.com/fredva/prediction-api-ws/tree/master/data/temperatures).
 
 ### Tren modell og test den
 
