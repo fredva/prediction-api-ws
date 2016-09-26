@@ -4,10 +4,7 @@
 
 - Logg inn på [console.cloud.google.com](http://console.cloud.google.com)
 - Opprett et prosjekt
-- _Enable and manage APIs_
-  - Enable API
-  - Google Cloud APIs
-  - Prediction API
+- Enable and manage APIs ➡ Enable API ➡ Google Cloud APIs ➡ Prediction API
 - Vi skal bruke API Explorer, og trenger derfor ikke opprette credentials
 - Opprett en bucket på Cloud Storage (bruk default settings)
 
