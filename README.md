@@ -15,7 +15,7 @@ Meteorologisk institutt lar deg laste ned [værdata](eklima.met.no) av ulike typ
 Datasettet finner du på https://storage.googleapis.com/ml-intro.appspot.com/temperatures.txt.
 
 ### Format
-Datasettet er på følgende format:  
+Datasettet er på følgende format:
 `temperatur,breddegrad,datoordinal`
 
 Utsnitt:
@@ -26,8 +26,8 @@ Utsnitt:
 -23.0,68.9968,63
 -24.1,68.9968,64
 ```
-Kolonne 0 er døgnmiddeltemperaturen for én dag.  
-Kolonne 1 er breddegraden til målestasjonen.  
+Kolonne 0 er døgnmiddeltemperaturen for én dag.
+Kolonne 1 er breddegraden til målestasjonen.
 Kolonne 2 er nummeret på dagen i året. 15. april er 105, 2. juni er 153, etc. (Se [Wikipedia](https://en.wikipedia.org/wiki/Ordinal_date#Table))
 
 #### Stasjoner
@@ -44,6 +44,9 @@ Originalfila fra MET, og scriptet for å konvertere den til et format som er kom
 - Last opp fila i en bucket i Cloud Storage
 - Gå til [APIs Explorer](https://developers.google.com/apis-explorer/) og finn Prediction API
 - Kall `prediction.trainedmodels.insert` med `id` og `storageLocation` for å opprette modellen.
+  - `project` skal være prosjekt-ID til prosjektet ditt
+  - `id` setter du til hva du vil
+  - `storageDataLocation` skal være `<navn-på-bucket>/<filnavn>`
 - Kall `prediction.trainedmodels.get` med `id` for å se status på treningen.
 - Når den er ferdig trent, kall `prediction.trainedmodels.predict` for å gjøre spørringer/prediksjoner.
 
